@@ -22,7 +22,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom right, #0f172a 0%, #581c87 50%, #0f172a 100%);
+    background: linear-gradient(to bottom right, #0f172a 0%, #188bbd 50%, #0f172a 100%);
     z-index: -1;
     pointer-events: none;
 }
@@ -75,7 +75,7 @@ body::before {
 .underline-divider {
     height: 0.25rem; /* h-1 */
     width: 6rem; /* w-24 */
-    background: #a78bfa; /* bg-purple-400 */
+    background: #188bbd;
     border-radius: 9999px; /* rounded-full */
     margin: 0 auto;
 }
@@ -84,7 +84,7 @@ body::before {
 .sub-heading {
     font-size: 1.25rem; /* text-xl */
     font-weight: 400;
-    color: #e9d5ff; /* text-purple-200 */
+    color: #cfe8f5;
     margin: 0;
     line-height: 1.5;
     text-wrap: balance;
@@ -156,13 +156,13 @@ body::before {
 
 .email-input:focus {
     background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(136, 84, 255, 0.6);
-    box-shadow: 0 0 0 3px rgba(136, 84, 255, 0.1);
+    border-color: rgba(24, 139, 189, 0.6);
+    box-shadow: 0 0 0 3px rgba(24, 139, 189, 0.1);
 }
 
 .notify-button {
     padding: 1.125rem 2.5rem;
-    background: #8854ff;
+    background: #188bbd;
     border: none;
     border-radius: 50px;
     color: #ffffff;
@@ -172,18 +172,18 @@ body::before {
     cursor: pointer;
     transition: all 0.3s ease;
     white-space: nowrap;
-    box-shadow: 0 4px 15px rgba(136, 84, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(24, 139, 189, 0.3);
 }
 
 .notify-button:hover {
-    background: #7c3aed;
+    background: #15739a;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(136, 84, 255, 0.4);
+    box-shadow: 0 6px 20px rgba(24, 139, 189, 0.4);
 }
 
 .notify-button:active {
     transform: translateY(0);
-    box-shadow: 0 2px 10px rgba(136, 84, 255, 0.3);
+    box-shadow: 0 2px 10px rgba(24, 139, 189, 0.3);
 }
 
 /* Privacy notice */
@@ -198,19 +198,114 @@ body::before {
 /* Badge container - pt-8 */
 .badge-container {
     padding-top: 2rem; /* pt-8 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 /* Launching Soon badge - px-4 py-2 bg-purple-500/20 text-purple-300 rounded-full border border-purple-400/30 */
 .launching-soon-badge {
     display: inline-block;
     padding: 0.5rem 1rem; /* px-4 py-2 */
-    background: rgba(168, 85, 247, 0.2); /* bg-purple-500/20 */
-    color: #d8b4fe; /* text-purple-300 */
-    border: 1px solid rgba(192, 132, 252, 0.3); /* border-purple-400/30 */
+    background: rgba(24, 139, 189, 0.2);
+    color: #cfe8f5;
+    border: 1px solid rgba(24, 139, 189, 0.3);
     border-radius: 9999px; /* rounded-full */
     font-size: 0.875rem;
     font-weight: 400;
     font-family: 'Inter', sans-serif;
+}
+
+/* Feature button - Explore Chord Probability Trends */
+.feature-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.875rem 1.75rem;
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(24, 139, 189, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.feature-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(24, 139, 189, 0.3);
+}
+
+.feature-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(24, 139, 189, 0.3);
+}
+
+.feature-button .button-arrow {
+    width: 14px;
+    height: 14px;
+    transition: transform 0.3s ease;
+}
+
+.feature-button:hover .button-arrow {
+    transform: translateX(3px);
+}
+
+/* Demo button - floating in top right */
+.demo-button {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: rgba(24, 139, 189, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(24, 139, 189, 0.3);
+}
+
+.demo-button:hover {
+    background: rgba(21, 115, 154, 0.95);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateX(-3px);
+    box-shadow: 0 6px 20px rgba(24, 139, 189, 0.4);
+}
+
+.demo-button:active {
+    transform: translateX(0);
+}
+
+.demo-button svg {
+    width: 14px;
+    height: 14px;
+    transition: transform 0.3s ease;
+}
+
+.demo-button:hover svg {
+    transform: translateX(2px);
+}
+
+.demo-text {
+    font-weight: 600;
 }
 
 /* Help icon with information symbol */
@@ -236,7 +331,7 @@ body::before {
     background: rgba(15, 23, 42, 0.95);
     border-color: rgba(255, 255, 255, 0.3);
     transform: scale(1.1);
-    box-shadow: 0 4px 15px rgba(136, 84, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(24, 139, 189, 0.3);
 }
 
 .help-icon svg {
@@ -281,6 +376,18 @@ body::before {
     
     .notify-button {
         width: 100%;
+    }
+    
+    .feature-button {
+        font-size: 0.875rem;
+        padding: 0.75rem 1.5rem;
+    }
+    
+    .demo-button {
+        top: 1.5rem;
+        right: 1.5rem;
+        padding: 0.625rem 1.25rem;
+        font-size: 0.875rem;
     }
     
     .help-icon {
@@ -328,6 +435,25 @@ body::before {
     .launching-soon-badge {
         font-size: 0.8rem;
         padding: 0.4rem 0.875rem;
+    }
+    
+    .feature-button {
+        font-size: 0.8rem;
+        padding: 0.625rem 1.25rem;
+        flex-direction: column;
+        gap: 0.25rem;
+        text-align: center;
+    }
+    
+    .demo-button {
+        top: 1rem;
+        right: 1rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+    
+    .demo-text {
+        display: none;
     }
     
     .privacy-notice {
