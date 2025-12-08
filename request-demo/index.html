@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Demo Access - Sonorus Labs</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <main class="main-content">
+            <div class="brand-section">
+                <h1 class="main-heading">Request Demo Access</h1>
+                <div class="underline-divider"></div>
+            </div>
+            <p class="body-text">
+                Share a few details and we'll reach out with access instructions.
+            </p>
+            <form class="email-form request-form" name="request-demo-access" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="request-demo-access">
+                <p class="hidden">
+                    <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                </p>
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <input 
+                            type="text" 
+                            name="name" 
+                            placeholder="Full name" 
+                            required
+                            class="email-input"
+                        />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <input 
+                            type="tel" 
+                            name="phone" 
+                            placeholder="Phone (optional)" 
+                            class="email-input"
+                        />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <input 
+                            type="email" 
+                            name="email" 
+                            placeholder="Email address" 
+                            required
+                            class="email-input"
+                        />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <textarea 
+                            name="reason" 
+                            placeholder="Reason for requesting demo access" 
+                            required
+                            class="email-input"
+                            rows="4"
+                        ></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="notify-button">Submit Request</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
+

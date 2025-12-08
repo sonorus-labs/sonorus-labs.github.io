@@ -114,6 +114,40 @@ body::before {
     margin: 0;
 }
 
+/* Stacked request form variant */
+.request-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 640px;
+}
+
+.request-form .form-group {
+    width: 100%;
+    display: block;
+}
+
+.request-form .input-wrapper {
+    width: 100%;
+}
+
+.request-form .email-input {
+    padding: 1.05rem 1.2rem;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.request-form textarea.email-input {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.request-form .notify-button {
+    align-self: flex-start;
+    border-radius: 16px;
+    padding: 0.95rem 2rem;
+}
+
 .form-group {
     display: flex;
     gap: 1rem;
