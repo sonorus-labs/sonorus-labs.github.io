@@ -4,7 +4,7 @@ A revolutionary music production platform for beginner to intermediate guitarist
 
 ## About
 
-Sonorus Labs LLC is developing innovative tools and technologies to make music production more accessible and intuitive for guitarists at all skill levels. Our platform is designed to bridge the gap between traditional guitar playing and modern digital music production.
+Sonorus Labs LLC is developing innovative tools and technologies to make music production more accessible and intuitive for instrumentalists at all skill levels. Our platform is designed to bridge the gap between traditional music in performance and modern digital music production.
 
 ## Website
 
