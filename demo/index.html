@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo - Sonorus Labs</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="demo-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="password-gate" class="password-gate">
+            <main class="main-content">
+                <div class="brand-section">
+                    <h1 class="main-heading">Sonorus Labs</h1>
+                    <div class="underline-divider"></div>
+                </div>
+                
+                <h2 class="sub-heading">Demo Access</h2>
+                
+                <p class="body-text">
+                    Enter the password to access the Sonorus demo.
+                </p>
+                
+                <form id="password-form" class="password-form">
+                    <div class="password-input-wrapper">
+                        <svg class="lock-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.8333 9.16667H4.16667C3.24619 9.16667 2.5 9.91286 2.5 10.8333V16.6667C2.5 17.5871 3.24619 18.3333 4.16667 18.3333H15.8333C16.7538 18.3333 17.5 17.5871 17.5 16.6667V10.8333C17.5 9.91286 16.7538 9.16667 15.8333 9.16667Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.83333 9.16667V5.83333C5.83333 4.72826 6.27232 3.66846 7.05372 2.88706C7.83512 2.10565 8.89493 1.66667 10 1.66667C11.1051 1.66667 12.1649 2.10565 12.9463 2.88706C13.7277 3.66846 14.1667 4.72826 14.1667 5.83333V9.16667" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <input 
+                            type="password" 
+                            id="password-input"
+                            placeholder="Enter password" 
+                            required
+                            class="password-input"
+                            autocomplete="off"
+                        />
+                        <button type="button" id="toggle-password" class="toggle-password" aria-label="Toggle password visibility">
+                            <svg id="eye-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.66667 10C1.66667 10 4.16667 4.16667 10 4.16667C15.8333 4.16667 18.3333 10 18.3333 10C18.3333 10 15.8333 15.8333 10 15.8333C4.16667 15.8333 1.66667 10 1.66667 10Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <svg id="eye-off-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                                <path d="M14.95 14.95C13.5255 16.0358 11.7909 16.6374 10 16.6667C4.16667 16.6667 1.66667 10.8333 1.66667 10.8333C2.52654 9.19072 3.73032 7.75247 5.19167 6.60833L14.95 14.95Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.25 3.53333C8.82379 3.39907 9.41073 3.33195 10 3.33333C15.8333 3.33333 18.3333 9.16666 18.3333 9.16666C17.9286 10.0069 17.4402 10.8036 16.875 11.5417M11.7667 11.7667C11.5378 12.0123 11.2617 12.2093 10.9552 12.3459C10.6486 12.4826 10.318 12.556 9.98293 12.562C9.64788 12.568 9.31477 12.5063 9.00359 12.3807C8.69241 12.2551 8.40942 12.0681 8.17176 11.8304C7.9341 11.5928 7.74708 11.3098 7.62148 10.9986C7.49589 10.6874 7.43421 10.3543 7.44021 10.0193C7.44621 9.68422 7.51977 9.35363 7.65644 9.04707C7.79311 8.74051 7.99007 8.46441 8.23567 8.23551" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M1.66667 1.66667L18.3333 18.3333" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <button type="submit" class="password-submit">Access Demo</button>
+                </form>
+                
+                <p id="error-message" class="error-message" style="display: none;">
+                    Incorrect password. Please try again.
+                </p>
+                
+                <a href="../" class="back-button">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Back to Home
+                </a>
+            </main>
+        </div>
+        
+        <div id="demo-content" class="demo-content" style="display: none;">
+            <main class="main-content">
+                <div class="brand-section">
+                    <h1 class="main-heading">Sonorus Labs</h1>
+                    <div class="underline-divider"></div>
+                </div>
+                
+                <h2 class="sub-heading">Demo</h2>
+                
+                <div class="coming-soon-content">
+                    <p class="body-text">
+                        Welcome to the Sonorus demo! We're preparing something extraordinary for you.
+                    </p>
+                    
+                    <div class="placeholder-box">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4" opacity="0.3"/>
+                            <path d="M32 20V32L40 40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <p class="placeholder-text">Demo Coming Soon</p>
+                    </div>
+                </div>
+                
+                <button id="logout-button" class="logout-button">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V3.33333C2 2.97971 2.14048 2.64057 2.39052 2.39052C2.64057 2.14048 2.97971 2 3.33333 2H6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.6667 11.3333L14 8L10.6667 4.66667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14 8H6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Logout
+                </button>
+            </main>
+        </div>
+    </div>
+    
+    <script src="auth.js"></script>
+</body>
+</html>
+
