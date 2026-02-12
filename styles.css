@@ -894,6 +894,7 @@ p {
 
   .form-inline-group .btn-form {
     width: 100%;
+    justify-content: center;
   }
 
   .steps-grid {
