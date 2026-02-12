@@ -1,15 +1,19 @@
-# Sonorus Labs LLC
+# Sonorus Labs
 
-A revolutionary music production platform for beginner to intermediate guitarists.
+AI-powered music creation — from idea to MIDI export in minutes.
 
 ## About
 
-Sonorus Labs LLC is developing innovative tools and technologies to make music production more accessible and intuitive for instrumentalists at all skill levels. Our platform is designed to bridge the gap between traditional music in performance and modern digital music production.
+Sonorus Labs builds conversational AI tools for music theory, composition, and sound design. Describe what you want to create in plain language and get intelligent chord progressions, melodies, and arrangements you can export to your DAW.
 
 ## Website
 
-Visit our website at [sonorus-labs.com](https://sonorus-labs.com)
+[sonorus-labs.com](https://sonorus-labs.com)
 
-## Current Status
+## Tech
 
-🚧 **Coming Soon** - We're crafting something extraordinary for guitarists who want to create without limits.
+Static HTML/CSS site hosted on Netlify. No build tools or JavaScript required.
+
+## Status
+
+Live demo available at [demo.sonorus-labs.com](https://demo.sonorus-labs.com). Full platform launching soon.
