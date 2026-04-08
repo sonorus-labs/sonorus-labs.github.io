@@ -575,6 +575,176 @@ p {
   z-index: 1;
 }
 
+/* --- Prompt Showcase Section --- */
+
+.showcase-section {
+  padding: 6rem 0;
+}
+
+.showcase-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.showcase-card {
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border-light);
+  border-radius: 14px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.showcase-card:hover {
+  border-color: var(--color-brand-primary);
+  box-shadow: 0 4px 16px rgba(23, 23, 23, 0.08);
+}
+
+.showcase-prompt {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--color-text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.showcase-meta {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--color-text-tertiary);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.showcase-chords {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.chord-chip {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  background: var(--color-brand-primary);
+  border-radius: 8px;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+/* --- Why Sonorus Section --- */
+
+.why-section {
+  padding: 6rem 0;
+  background: var(--color-bg-secondary);
+}
+
+.why-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.why-item {
+  text-align: center;
+}
+
+.why-item h3 {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: var(--color-text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.why-item p {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+/* --- FAQ Section --- */
+
+.faq-section {
+  padding: 6rem 0;
+}
+
+.faq-container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.faq-item:first-child {
+  border-top: 1px solid var(--color-border-light);
+}
+
+.faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  list-style: none;
+  transition: color 0.2s ease;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: '+';
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--color-text-tertiary);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.faq-item[open] summary::after {
+  content: '−';
+}
+
+.faq-item summary:hover {
+  color: var(--color-accent-green);
+}
+
+.faq-item p {
+  padding: 0 0 1.25rem;
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
 /* --- Final CTA Section --- */
 
 .final-cta-section {
@@ -729,6 +899,17 @@ p {
     flex: 0 0 calc(50% - 0.75rem);
   }
 
+  .showcase-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
   .steps-grid {
     flex-wrap: wrap;
     justify-content: center;
@@ -780,6 +961,10 @@ p {
 @media (max-width: 640px) {
   .pillar-card {
     flex: 0 0 100%;
+  }
+
+  .showcase-grid {
+    grid-template-columns: 1fr;
   }
 
   .hero-cta-group {
