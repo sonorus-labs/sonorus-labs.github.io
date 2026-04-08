@@ -619,7 +619,6 @@ p {
   font-size: 0.75rem;
   color: var(--color-text-tertiary);
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   margin-bottom: 1rem;
 }
 
