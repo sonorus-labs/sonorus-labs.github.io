@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sonorus - AI Songwriting Studio</title>
-    <meta name="description" content="From prompt to full song in minutes. Sonorus generates chord progressions with real music theory, then gives you a canvas to shape your song with AI editing, chord diagrams, and instant playback.">
-    <meta property="og:title" content="Sonorus - AI Songwriting Studio">
-    <meta property="og:description" content="Generate, edit, and arrange chord progressions with AI that understands harmony. Full-song MIDI export ready for your DAW.">
+    <title>Sonorus Labs - AI Songwriting Studio</title>
+    <meta name="description" content="Describe your vibe. Sonorus builds the chord progression. You shape it into a song. Free during beta.">
+    <meta property="og:title" content="Sonorus Labs - AI Songwriting Studio">
+    <meta property="og:description" content="Describe your vibe. Sonorus builds the chord progression. You shape it into a song. Free during beta.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sonorus-labs.com">
     <meta property="og:image" content="https://sonorus-labs.com/assets/mvp_v1.png">
@@ -39,7 +39,7 @@
     <section class="hero-section" aria-labelledby="hero-heading">
         <div class="hero-container">
             <h1 id="hero-heading" class="reveal">Your <span class="text-accent">AI songwriting</span> studio.</h1>
-            <p class="hero-subtitle reveal">Describe your vibe. Sonorus builds the chord progression, section by section. Edit with AI, pick chords by ear, transpose keys, and export MIDI - all in one workspace.</p>
+            <p class="hero-subtitle reveal">Describe what you're going for. Sonorus builds the harmony. You shape it into a song.</p>
 
             <div class="hero-cta-group reveal">
                 <a href="https://demo.sonorus-labs.com" class="btn-primary">
@@ -48,15 +48,15 @@
                         <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </a>
-                <a href="#waitlist" class="btn-secondary">Join Waitlist</a>
             </div>
             <p class="hero-free-note reveal">Free during beta</p>
 
             <div class="hero-badges reveal">
                 <span class="hero-badge">AI Editing</span>
-                <span class="hero-badge">MIDI Export</span>
                 <span class="hero-badge">Chord Diagrams</span>
+                <span class="hero-badge">Lyrics</span>
                 <span class="hero-badge">Instant Playback</span>
+                <span class="hero-badge">MIDI Export</span>
             </div>
 
             <div class="hero-image-wrapper reveal">
@@ -97,7 +97,7 @@
         <div class="pillars-container">
             <header class="section-header reveal">
                 <h2 id="pillars-heading">Everything you need to write your <span class="text-accent">next song</span>.</h2>
-                <p class="section-subtitle">From first idea to finished MIDI export. Sonorus handles the music theory so you can focus on the music.</p>
+                <p class="section-subtitle">From your first idea to a full arrangement. Sonorus handles the music theory so you can focus on the music.</p>
             </header>
 
             <div class="pillars-grid">
@@ -143,8 +143,8 @@
                             <path d="M10 8.5L16 12L10 15.5V8.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3>Hear it. Export it. Finish it.</h3>
-                    <p>Play back any section or your entire song arrangement with live chord highlighting. Export the full song as MIDI - sections, repeats, and all - ready for your DAW.</p>
+                    <h3>Hear it, export it, take it to your DAW</h3>
+                    <p>Play back any section or your entire arrangement with live chord highlighting. Export as MIDI - sections, repeats, and all - and open it straight in Ableton, Logic, or wherever you work.</p>
                 </article>
 
                 <article class="pillar-card reveal">
@@ -186,7 +186,7 @@
                 <article class="step-item reveal">
                     <div class="step-number">03</div>
                     <h3>Shape your sound</h3>
-                    <p>Swap chords from the color-coded picker, ask the AI to "make it darker", duplicate sections, transpose keys - all in one canvas.</p>
+                    <p>Swap chords from the color-coded picker, ask the AI to "make it darker", duplicate sections, transpose keys. Jot down lyrics right in the canvas while the harmony is fresh.</p>
                 </article>
 
                 <article class="step-item reveal">
@@ -280,7 +280,7 @@
     <section class="why-section" aria-labelledby="why-heading">
         <div class="why-container">
             <header class="section-header reveal">
-                <h2 id="why-heading">Built <span class="text-accent">different</span></h2>
+                <h2 id="why-heading">Built for how you <span class="text-accent">actually write</span></h2>
             </header>
 
             <div class="why-grid">
@@ -332,6 +332,11 @@
                     <summary>Can I edit the chords after generating them?</summary>
                     <p>Absolutely - that's the point. Use the AI to describe changes ("make the bridge darker"), swap chords manually from the harmonic picker, or do both. Every chord in every section is fully editable.</p>
                 </details>
+
+                <details class="faq-item reveal">
+                    <summary>Can I write lyrics in Sonorus?</summary>
+                    <p>Yes. Each section has a lyrics panel so your words and chords live in the same place. Write while the harmony is fresh, then export the whole thing when you're ready.</p>
+                </details>
             </div>
         </div>
     </section>
@@ -358,7 +363,7 @@
     <!-- Waitlist Section (hidden anchor target with inline form) -->
     <section class="waitlist-section" id="waitlist">
         <div class="waitlist-container reveal">
-            <p class="waitlist-label">Get notified when we officially launch</p>
+            <p class="waitlist-label">Stay in the loop</p>
             <form class="waitlist-form" name="waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field">
                 <input type="hidden" name="form-name" value="waitlist">
                 <p class="hidden">
@@ -366,10 +371,10 @@
                 </p>
                 <div class="form-inline-group">
                     <input type="email" name="email" placeholder="Enter your email" required class="form-input" />
-                    <button type="submit" class="btn-form">Join Waitlist</button>
+                    <button type="submit" class="btn-form">Subscribe</button>
                 </div>
             </form>
-            <p class="form-privacy">We'll only email you once - when we launch.</p>
+            <p class="form-privacy">We'll email you when we ship new features. No spam.</p>
         </div>
     </section>
 
