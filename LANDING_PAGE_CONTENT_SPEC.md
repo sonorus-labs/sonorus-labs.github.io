@@ -21,6 +21,7 @@ Key new capabilities to highlight:
 - Full-song MIDI export (all sections, with repeats)
 - Guided song creation flow (title → key → tempo → first section prompt)
 - Smart prompt routing (same input box for generating and editing)
+- Built-in lyrics panel — draft lyrics alongside your chords, auto-saved per song
 
 ---
 
@@ -109,6 +110,14 @@ Key new capabilities to highlight:
 - Description options:
   - "Add Verses, Choruses, Bridges, Intros, Outros — each with their own chords, key, and repeat count. Arrange them into a full song, not just a single loop."
   - "Sonorus isn't a loop generator. Build full multi-section songs with independent harmony per section, drag to reorder, duplicate to iterate, and export the whole arrangement."
+
+**Optional Pillar 6: Lyrics**
+- Icon concept: pencil / lined page / text cursor
+- Headline: "Write lyrics alongside your chords"
+- Description options:
+  - "A built-in lyrics panel lets you draft lyrics right next to your chord canvas. One place for everything — chords, harmony, and words."
+  - "Open the lyrics panel, start writing. Your words sit right next to your chords, auto-saved as you type. No switching apps, no copy-pasting into a notes doc."
+  - "Chord canvas on the left, lyrics on the right. Keep your words and harmony in the same workspace — exactly where they belong."
 
 ---
 
@@ -201,6 +210,8 @@ Short punchy phrases to use anywhere on the page — headlines, badges, CTAs, or
 - "Live playback with chord highlighting"
 - "Key transposition in one click"
 - "Tempo control with auto-sync"
+- "Built-in lyrics panel"
+- "Lyrics auto-saved as you type"
 
 **Tone/feel phrases:**
 - "Describe the vibe, we'll handle the theory"
@@ -210,6 +221,8 @@ Short punchy phrases to use anywhere on the page — headlines, badges, CTAs, or
 - "Built for musicians, powered by music theory"
 - "Not a loop — a song"
 - "Hear it before you export it"
+- "Chords and lyrics in one place"
+- "Write the words while the harmony is fresh"
 
 **Differentiator phrases (vs generic AI music tools):**
 - "Real music theory, not random notes"
@@ -224,7 +237,7 @@ Short punchy phrases to use anywhere on the page — headlines, badges, CTAs, or
 
 Beyond the standard landing page sections, these are content formats that could strengthen the page:
 
-1. **Feature badges** — Small labeled pills near the hero image ("AI Editing", "MIDI Export", "Chord Diagrams", "115+ Templates")
+1. **Feature badges** — Small labeled pills near the hero image ("AI Editing", "MIDI Export", "Chord Diagrams", "115+ Templates", "Lyrics Panel")
 2. **Before/after comparison** — V1 "single generation" vs V2 "full song canvas" side by side
 3. **Micro-demo GIF or video** — 10-second screen recording of: prompt → generate → play → export
 4. **Genre showcase** — Cards showing example prompts and their output ("'sad indie verse' → Em Am C G")
