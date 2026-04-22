@@ -104,8 +104,23 @@ p {
 
 .nav-logo {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  gap: 4px;
   text-decoration: none;
+}
+
+.nav-beta {
+  margin-top: 2px;
+  border-radius: 4px;
+  background-color: #e5e5e5;
+  padding: 1px 4px;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.075em;
+  color: #737373;
+  font-family: var(--font-sans);
 }
 
 .nav-logo img {
