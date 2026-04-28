@@ -662,6 +662,113 @@ p {
   color: var(--color-text-primary);
 }
 
+/* --- Roadmap (What's Coming Next) Section --- */
+
+.roadmap-section {
+  padding: 6rem 0;
+}
+
+.roadmap-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.roadmap-split {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+.roadmap-left h2 {
+  font-family: var(--font-serif);
+  font-size: 2.75rem;
+  color: var(--color-text-primary);
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+
+.roadmap-left p {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.roadmap-active-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border-light);
+  border-radius: 9999px;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.75rem;
+  color: var(--color-text-tertiary);
+  font-family: var(--font-sans);
+}
+
+.roadmap-pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-accent-green);
+  flex-shrink: 0;
+  animation: roadmap-pulse 2s ease-in-out infinite;
+}
+
+@keyframes roadmap-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+.roadmap-tiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.875rem;
+}
+
+.roadmap-tile {
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border-light);
+  border-radius: 14px;
+  padding: 1.25rem 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.roadmap-tile:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(23, 23, 23, 0.08);
+  border-color: var(--color-brand-primary);
+}
+
+.roadmap-tile-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  background: var(--color-brand-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.875rem;
+  color: var(--color-text-primary);
+}
+
+.roadmap-tile h3 {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: var(--color-text-primary);
+  margin-bottom: 0.3rem;
+  line-height: 1.3;
+}
+
+.roadmap-tile p {
+  font-size: 0.78rem;
+  color: var(--color-text-tertiary);
+  line-height: 1.5;
+}
+
 /* --- Why Sonorus Section --- */
 
 .why-section {
@@ -917,6 +1024,19 @@ p {
    -------------------------------------------- */
 
 @media (max-width: 1024px) {
+  .roadmap-split {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .roadmap-left h2 {
+    font-size: 2.25rem;
+  }
+
+  .roadmap-tiles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .pillar-card {
     flex: 0 0 calc(50% - 0.75rem);
   }
@@ -981,6 +1101,10 @@ p {
 }
 
 @media (max-width: 640px) {
+  .roadmap-tiles {
+    grid-template-columns: 1fr;
+  }
+
   .pillar-card {
     flex: 0 0 100%;
   }
